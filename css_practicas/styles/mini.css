@@ -1,0 +1,19 @@
+/*
+Autor: Roberto Rico Sandoval.
+Fille: Adaptación pequeña.
+Date: 22/ 11/ 2022
+*/
+
+.display-mini{
+    display: inherit !important;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select.display-mini{
+    font-size: 1.2em;
+    width: 100%;
+}
+

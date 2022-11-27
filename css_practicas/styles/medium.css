@@ -1,0 +1,14 @@
+/*
+Autor: Roberto Rico Sandoval.
+Fille: Adaptación mediana.
+Date: 22/ 11/ 2022
+*/
+
+.display-medium{
+    display: inherit !important;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+

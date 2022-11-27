@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+Autor: Roberto Rico Sandoval.
+Fille: Página de inicio HTML.
+Date: 15/ 11/ 2022
+
+-->
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas, fomularios y registros</title>
+
+</head>
+
+<body>
+
+    <h1>Tablas, fomularios y registros.</h1>
+
+    <p>En HTML 5</p>
+
+    <form id="form-order">
+
+            <p>
+                <label for="name">Nombre (Obligatorio)</label>
+
+                <input type="text" name="name" id="name"
+                placeholder="Roberto"
+                autofocus
+                autocomplete
+                required/>
+            </p>
+
+            <p>
+
+                <label for="passw">Contraseña (Obligatorio)</label>
+
+                <input type="password" name="passw" id="passw"
+                placeholder="qwerty1997"
+                pattern="[a-z] {3} [0-9] {4}"/> (La Contraseña deb contener 3 letras y 4 números en este orden)
+            
+            </p>
+            
+            <p>
+
+                <label for="phone">Teléfono</label>
+
+                <input type="tel" name="phone" id="phone"
+                placeholder="+52 55 7845 1263"/>
+
+            </p>
+
+            <p>
+
+                <label for="email">Email</label>
+
+                <input type="email" name="email" id="email"
+                placeholder="ejemplo4@gmail.com"/>
+
+            </p>
+
+            <p>
+
+                <label for="website">Tú página web</label>
+
+                <input type="url" name="website" id="website"
+                placeholder="https//mexico.com.mx"/>
+
+            </p>
+
+            <p>
+
+                <label for="numberexample">Num. Temas</label>
+
+                <input type="number" name="numberexample" id="numberexample" min="2" max="14"
+                placeholder="2" step="2"/> (Entre 2 y 14, solo pares)
+
+            </p>
+
+            <p>
+
+                <label for="deluverydate">Fecha de envío</label>
+                <input type="date" name="deluverydate" id="deluverydate" min="1950-01-01"/> (Fecha miníma limite 01 de Enero de 1950)
+
+            </p>
+
+            <p>
+
+                <label for="colorexample">Color de item</label>
+                <input type="color" name="colorexample" id="colorexample" value="#1A33FF"/>
+
+            </p>
+
+            <p>
+
+                <label for="buscar">Buscar</label>
+                <input type="search" name="buscar" id="buscar"/>
+
+            </p>
+
+            <p>
+
+                <label for="points">Rango de valores</label>
+                <input type="range" name="points" id="points" min="1" max="10"/> (1 entre 10)
+
+            </p>
+
+            <p>
+                <fieldset>
+
+                    <legend>Elige una prioridad.</legend>
+                    <p><label><input type="radio" name="priority" value="baja" checked/>Baja</label></p>
+                    <p><label><input type="radio" name="priority" value="media"/>Media</label></p>
+                    <p><label><input type="radio" name="priority" value="baja"/>Baja</label></p>
+                
+                </fieldset>
+            </p>
+
+            <p>
+                <fieldset>
+
+                    <legend>Elige un tipo de envio.</legend>
+                    <p><label><input type="checkbox" name="deliverytype" value="urgente" checked/>Urgente</label></p>
+                    <p><label><input type="checkbox" name="deliverytype" value="acuse"/>Con acuse de recibo</label></p>
+                    <p><label><input type="checkbox" name="deliverytype" value="reembolso"/>Contra reembolso</label></p>
+                
+                </fieldset>
+            </p>
+
+        <input type="submit" value="Enviar"/>
+
+    </form>
+    
+</body>
+
+</html>
+

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+Autor: Roberto Rico Sandoval.
+Fille: Listas con estilo CSS.
+Date: 15/ 11/ 2022
+
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en CSS</title>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+        
+        .circulo{
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+
+        .cuadrado{
+            list-style-type: square;
+        }
+
+        .fuera{
+            list-style-position: inside;
+        }
+
+        .poke{
+            list-style-image: url("picachu.jpg");
+        }
+
+        .sin_estilo{
+            list-style-type: none;
+            list-style-position: inside;
+            margin: 0;
+            padding: 50;
+        }
+
+        .vertical a{
+            display: block;
+            width: 120px;
+            color: #FFFFFF;
+            background-color: #98bf21;
+            text-align: center;
+            padding: 4px;
+        }
+
+        .vertical a:hover, .vertical a:active {
+            background-color: #7a991a;
+        }
+
+        .horizontal li{
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        .horizontal a{
+            margin: 0;
+            color: #FFFFFF;
+            background-color: #98bf21;
+            text-align: center;
+            padding: 4px;
+        }
+
+        .horizontal a:hover, .horizontal a:active{
+            background-color: #7a991a;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Listas desordenadas.</h2>
+
+    <ul>
+        <li>Primer elemento.</li>
+        <li>Segundo elemento.</li>
+        <li>Tercer elemento.</li>
+        <li>Cuarto elemento.</li>
+    </ul>
+
+    <ul class="circulo">
+        <li>Primer elemento.</li>
+        <li>Segundo elemento.</li>
+        <li>Tercer elemento.</li>
+        <li>Cuarto elemento.</li>
+    </ul>
+
+    <ul class="cuadrado">
+        <li>Primer elemento.</li>
+        <li>Segundo elemento.</li>
+        <li>Tercer elemento.</li>
+        <li>Cuarto elemento.</li>
+    </ul>
+
+    <ul class="poke">
+        <li>Primer elemento.</li>
+        <li>Segundo elemento.</li>
+        <li>Tercer elemento.</li>
+        <li>Cuarto elemento.</li>
+    </ul>
+
+    <h2>Listas ordenadas.</h2>
+
+    <ol class="fuera">
+        <li>Primer elemento.</li>
+        <li>Segundo elemento.</li>
+        <li>Tercer elemento.</li>
+        <li>Cuarto elemento.</li>
+    </ol>
+
+    <ol type="A">
+        <li>Primer elemento.</li>
+        <li>Segundo elemento.</li>
+        <li>Tercer elemento.</li>
+        <li>Cuarto elemento.</li>
+    </ol>
+
+    <ol class="fuera" type="a">
+        <li>Primer elemento.</li>
+        <li>Segundo elemento.</li>
+        <li>Tercer elemento.</li>
+        <li>Cuarto elemento.</li>
+    </ol>
+
+    <ol type="I">
+        <li>Primer elemento.</li>
+        <li>Segundo elemento.</li>
+        <li>Tercer elemento.</li>
+        <li>Cuarto elemento.</li>
+    </ol>
+
+    <ol class="fuera" type="i">
+        <li>Primer elemento.</li>
+        <li>Segundo elemento.</li>
+        <li>Tercer elemento.</li>
+        <li>Cuarto elemento.</li>
+    </ol>
+
+    <h2>Barra de navegación por listas de forma vertical.</h2>
+
+    <ul class="sin_estilo vertical">
+        <li><a href="https://www.xvideos.com/">Inicio</a></li>
+        <li><a href="https://www.xnxx.com/">Productos</a></li>
+        <li><a href="https://es.pornhub.com/">Servicios</a></li>
+        <li><a href="https://www.poringa.net/">Contacto</a></li>
+    </ul>
+
+    <h2>Barra de navegación por listas de forma horizontal.</h2>
+
+    <ul class="sin_estilo horizontal">
+        <li><a href="https://www.xvideos.com/">Inicio</a></li>
+        <li><a href="https://www.xnxx.com/">Productos</a></li>
+        <li><a href="https://es.pornhub.com/">Servicios</a></li>
+        <li><a href="https://www.poringa.net/">Contacto</a></li>
+    </ul>
+</body>
+
+</html>
+
